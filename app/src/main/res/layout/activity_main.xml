@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mzdhr.tourguideelmadina.ui.MainActivity"
+    android:background="@color/activityBackgroundColor">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/header"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView"
+        android:alpha=".5"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        android:text="A Tour Guide To The City Madina El Monawara!"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_centerInParent="true"
+        android:fontFamily="serif-monospace"/>
+
+    <Button
+        android:id="@+id/enter_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/buttonTextColor"
+        android:fontFamily="serif-monospace"
+        android:textSize="24dp"
+        />
+</RelativeLayout>
