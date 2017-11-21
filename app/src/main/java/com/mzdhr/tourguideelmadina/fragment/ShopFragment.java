@@ -26,14 +26,18 @@ public class ShopFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_container, container, false);
 
-        final ArrayList<Place> placesHotels = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            placesHotels.add(new Place("Shop 0" + i));
-        }
+        final ArrayList<Place> placesShops = new ArrayList<>();
+        placesShops.add(new Place("dd", "8AM - 10PM", 24.4878472, 39.6481492));
+        placesShops.add(new Place("d", "8AM - 10PM", 24.4695945, 39.606515));
+        placesShops.add(new Place("d", "8AM - 10PM", 24.4878472, 39.6481492));
+        placesShops.add(new Place("d", "8AM - 10PM", 24.4878472, 39.6481492));
+        placesShops.add(new Place("ee dfe", "8AM - 10PM", 24.4878472, 39.6481492));
+        placesShops.add(new Place("dd's", "8AM - 10PM", 24.4878472, 39.6481492));
+        placesShops.add(new Place("d", "8AM - 10PM", 24.4878472, 39.6481492));
 
-        PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesHotels);
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesShops);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);

@@ -42,5 +42,8 @@
         android:textColor="@color/buttonTextColor"
         android:fontFamily="serif-monospace"
         android:textSize="24dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+
         />
 </RelativeLayout>

@@ -5,7 +5,7 @@
     <color name="colorAccent">#FFCA2C</color>
     <color name="activityBackgroundColor">#FEFCEF</color>
 
-    <color name="textColor">#3E3C26</color>
+
 
     <color name="buttonColor">@color/colorPrimaryDark</color>
     <color name="buttonTextColor">#ffffff</color>
@@ -13,4 +13,8 @@
 
     <color name="firstIconTabColor">#ffffff</color>
     <color name="iconTabColor">#03705B</color>
+
+    <color name="textColor">#222831</color>
+    <color name="itemTitleTextColor">#222831</color>
+    <color name="itemSubTitleTextColor">#393E46</color>
 </resources>

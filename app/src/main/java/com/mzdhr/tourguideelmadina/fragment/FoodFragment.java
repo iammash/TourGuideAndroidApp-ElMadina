@@ -26,14 +26,18 @@ public class FoodFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_container, container, false);
 
-        final ArrayList<Place> placesHotels = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            placesHotels.add(new Place("Food 0" + i));
-        }
+        final ArrayList<Place> placesFood = new ArrayList<>();
+        placesFood.add(new Place("Albaik Restaurant", "7AM - 10PM", 24.4878472, 39.6481492));
+        placesFood.add(new Place("Albaik", "7AM - 10PM", 24.4695945, 39.606515));
+        placesFood.add(new Place("Herfy", "9AM - 9PM", 24.4878472, 39.6481492));
+        placesFood.add(new Place("KFC", "11AM - 11PM", 24.4878472, 39.6481492));
+        placesFood.add(new Place("STARBUCKS COFFEE", "7AM - 10PM", 24.4878472, 39.6481492));
+        placesFood.add(new Place("McDonald's", "7AM - 10PM", 24.4878472, 39.6481492));
+        placesFood.add(new Place("Cinnabon", "8AM - 9PM", 24.4878472, 39.6481492));
 
-        PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesHotels);
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesFood);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);

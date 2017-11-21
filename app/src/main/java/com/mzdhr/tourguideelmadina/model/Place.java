@@ -5,21 +5,87 @@ package com.mzdhr.tourguideelmadina.model;
  */
 
 public class Place {
-    String mTitle;
+    private String mPlaceName;
+    private String mSubText;
+    private double mLatitude;
+    private double mLongitude;
+    private int mCover;
+    private boolean hasCover;
+    private boolean isHasStarRating;
 
-    public Place(String title) {
-        mTitle = title;
+
+    public Place(String placeName, String subText, double latitude, double longitude) {
+        mPlaceName = placeName;
+        mLatitude = latitude;
+        mLongitude = longitude;
+        mSubText = subText;
+        if (subText.contains("★")){
+            isHasStarRating = true;
+        }
     }
 
-    public Place(int x){
-
+    public Place(String placeName, String subText, double latitude, double longitude, int cover) {
+        mPlaceName = placeName;
+        mLatitude = latitude;
+        mLongitude = longitude;
+        mCover = cover;
+        hasCover = true;
+        mSubText = subText;
     }
 
-    public String getTitle() {
-        return mTitle;
+    public String getPlaceName() {
+        return mPlaceName;
     }
 
-    public void setTitle(String title) {
-        mTitle = title;
+    public void setPlaceName(String placeName) {
+        mPlaceName = placeName;
+    }
+
+    public double getLatitude() {
+        return mLatitude;
+    }
+
+    public void setLatitude(double latitude) {
+        mLatitude = latitude;
+    }
+
+    public double getLongitude() {
+        return mLongitude;
+    }
+
+    public void setLongitude(double longitude) {
+        mLongitude = longitude;
+    }
+
+    public int getCover() {
+        return mCover;
+    }
+
+    public void setCover(int cover) {
+        mCover = cover;
+    }
+
+    public boolean hasCover() {
+        return hasCover;
+    }
+
+    public void setHasCover(boolean hasCover) {
+        this.hasCover = hasCover;
+    }
+
+    public String getSubText() {
+        return mSubText;
+    }
+
+    public void setSubText(String subText) {
+        mSubText = subText;
+    }
+
+    public boolean hasStarRating() {
+        return isHasStarRating;
+    }
+
+    public void setHasStarRating(boolean hasStarRating) {
+        isHasStarRating = hasStarRating;
     }
 }
