@@ -5,11 +5,21 @@ package com.mzdhr.tourguideelmadina.model;
  */
 
 public class Place {
+    String mTitle;
 
-    public Place() {
+    public Place(String title) {
+        mTitle = title;
     }
 
     public Place(int x){
 
+    }
+
+    public String getTitle() {
+        return mTitle;
+    }
+
+    public void setTitle(String title) {
+        mTitle = title;
     }
 }

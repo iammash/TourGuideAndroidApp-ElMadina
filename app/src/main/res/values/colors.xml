@@ -9,4 +9,8 @@
 
     <color name="buttonColor">@color/colorPrimaryDark</color>
     <color name="buttonTextColor">#ffffff</color>
+
+
+    <color name="firstIconTabColor">#ffffff</color>
+    <color name="iconTabColor">#03705B</color>
 </resources>
