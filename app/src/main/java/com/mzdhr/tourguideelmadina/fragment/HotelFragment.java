@@ -36,6 +36,7 @@ public class HotelFragment extends Fragment {
         placesHotels.add(new Place("Zowar International", "★★★★☆", 24.4726119, 39.607875));
         placesHotels.add(new Place("Dar Al Shohadaa Hotel", "★★★☆☆", 24.4726119, 39.607875));
         placesHotels.add(new Place("Elaf Taibah", "★★★★★", 24.4726119, 39.607875));
+        placesHotels.add(new Place("Taba Oasis Hotel", "★★★★★", 24.4749532, 39.6177886));
 
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesHotels);

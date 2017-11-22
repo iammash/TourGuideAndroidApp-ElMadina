@@ -20,10 +20,12 @@ public class Place {
         mLongitude = longitude;
         mSubText = subText;
         if (subText.contains("★")){
+            // that means any place that have a start icon system in his sub-title, it should be a hotel.
             isHasStarRating = true;
         }
     }
 
+    // overloading the constructor so Spot Places used it to add their cover image.
     public Place(String placeName, String subText, double latitude, double longitude, int cover) {
         mPlaceName = placeName;
         mLatitude = latitude;

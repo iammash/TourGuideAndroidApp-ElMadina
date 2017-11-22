@@ -31,11 +31,14 @@ public class FoodFragment extends Fragment {
         final ArrayList<Place> placesFood = new ArrayList<>();
         placesFood.add(new Place("Albaik Restaurant", "7AM - 10PM", 24.4878472, 39.6481492));
         placesFood.add(new Place("Albaik", "7AM - 10PM", 24.4695945, 39.606515));
-        placesFood.add(new Place("Herfy", "9AM - 9PM", 24.4878472, 39.6481492));
-        placesFood.add(new Place("KFC", "11AM - 11PM", 24.4878472, 39.6481492));
+        placesFood.add(new Place("Herfy", "7AM - 9PM", 24.4878472, 39.6481492));
+        placesFood.add(new Place("KFC", "7AM - 11PM", 24.4878472, 39.6481492));
         placesFood.add(new Place("STARBUCKS COFFEE", "7AM - 10PM", 24.4878472, 39.6481492));
         placesFood.add(new Place("McDonald's", "7AM - 10PM", 24.4878472, 39.6481492));
-        placesFood.add(new Place("Cinnabon", "8AM - 9PM", 24.4878472, 39.6481492));
+        placesFood.add(new Place("Cinnabon", "7AM - 10PM", 24.4878472, 39.6481492));
+        placesFood.add(new Place("Karachi Restaurant", "7AM - 10PM", 24.4780252, 39.6051526));
+        placesFood.add(new Place("Mairaj Indian and Chinese", "7AM - 10PM", 24.4780252, 39.6051526));
+        placesFood.add(new Place("Hadramout Restaurant", "7AM - 10PM", 24.4675248, 39.5999492));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesFood);
 

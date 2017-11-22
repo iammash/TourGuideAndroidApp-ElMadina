@@ -29,13 +29,12 @@ public class ShopFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_container, container, false);
 
         final ArrayList<Place> placesShops = new ArrayList<>();
-        placesShops.add(new Place("dd", "8AM - 10PM", 24.4878472, 39.6481492));
-        placesShops.add(new Place("d", "8AM - 10PM", 24.4695945, 39.606515));
-        placesShops.add(new Place("d", "8AM - 10PM", 24.4878472, 39.6481492));
-        placesShops.add(new Place("d", "8AM - 10PM", 24.4878472, 39.6481492));
-        placesShops.add(new Place("ee dfe", "8AM - 10PM", 24.4878472, 39.6481492));
-        placesShops.add(new Place("dd's", "8AM - 10PM", 24.4878472, 39.6481492));
-        placesShops.add(new Place("d", "8AM - 10PM", 24.4878472, 39.6481492));
+        placesShops.add(new Place("Al Jazeera Hotel & Shopping Mall", "8AM - 10PM", 24.4512006, 39.6076065));
+        placesShops.add(new Place("Central Shop", "8AM - 10PM", 24.4736487, 39.6071544));
+        placesShops.add(new Place("Mazaia Mall", "8AM - 10PM", 24.471266, 39.6047082));
+        placesShops.add(new Place("Al Rawasi Shopping Centee", "8AM - 10PM", 24.4512006, 39.6076065));
+        placesShops.add(new Place("Yaseen Shop", "8AM - 10PM", 24.4512006, 39.6076065));
+        placesShops.add(new Place("Sham 1 Hotel Shopping Mall", "8AM - 10PM", 24.4512006, 39.6076065));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesShops);
 

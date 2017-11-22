@@ -28,7 +28,6 @@ public class PlaceAdapter extends ArrayAdapter<Place>{
         super(context, 0, places);
     }
 
-
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -40,27 +39,29 @@ public class PlaceAdapter extends ArrayAdapter<Place>{
 
         final Place currentPlace = getItem(position);
 
+        // getting views and setting values into them
         TextView titleTextView = (TextView) listItemView.findViewById(R.id.title_text_view);
         TextView subTitleTextView = (TextView) listItemView.findViewById(R.id.sub_title_text_view);
         titleTextView.setText(currentPlace.getPlaceName());
         subTitleTextView.setText(currentPlace.getSubText());
 
         if (currentPlace.hasStarRating()){
+            // in this case it is a Hotel place, hotel has 5 star system rating.
             subTitleTextView.setTextColor(ContextCompat.getColor(getContext(), R.color.colorAccent));
         }
 
         ImageView coverImageView = (ImageView) listItemView.findViewById(R.id.place_cover_image_view);
         if (currentPlace.hasCover()){
+            // in this case it is a Spot (landmark), and a spot should have a cover (image).
             coverImageView.setImageResource(currentPlace.getCover());
             coverImageView.setVisibility(View.VISIBLE);
         }
 
-
+            // setting a click listener to each item to open the place location in Google Map.
         listItemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Uri gmmIntentUri = Uri.parse("geo:"+currentPlace.getLatitude()+","+currentPlace.getLongitude()+"39.648536?q="+currentPlace.getPlaceName());
-                //Uri gmmIntentUri = Uri.parse("geo:24.487891,39.648536?q=Albaik Restaurant");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 if (mapIntent.resolveActivity(getContext().getPackageManager()) != null) {
@@ -69,7 +70,6 @@ public class PlaceAdapter extends ArrayAdapter<Place>{
 
             }
         });
-
 
         return listItemView;
     }
