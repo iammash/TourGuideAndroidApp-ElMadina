@@ -29,14 +29,14 @@ public class HotelFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragments_container, container, false);
 
         final ArrayList<Place> placesHotels = new ArrayList<>();
-        placesHotels.add(new Place("InterContinental Dar Al Hijra Madinah", "★★★★★", 24.4726119, 39.607875));
-        placesHotels.add(new Place("Al Madinah Harmony Hotel", "★★★★☆", 24.4726119, 39.607875));
-        placesHotels.add(new Place("DAR AL TAQWA HOTEL MADINAH", "★★★☆☆", 24.4726119, 39.607875));
-        placesHotels.add(new Place("Anwar Al Madinah Mövenpick Hotel", "★★☆☆☆", 24.4726119, 39.607875));
-        placesHotels.add(new Place("Zowar International", "★★★★☆", 24.4726119, 39.607875));
-        placesHotels.add(new Place("Dar Al Shohadaa Hotel", "★★★☆☆", 24.4726119, 39.607875));
-        placesHotels.add(new Place("Elaf Taibah", "★★★★★", 24.4726119, 39.607875));
-        placesHotels.add(new Place("Taba Oasis Hotel", "★★★★★", 24.4749532, 39.6177886));
+        placesHotels.add(new Place(getString(R.string.hotel01), getString(R.string.stars5), 24.4726119, 39.607875));
+        placesHotels.add(new Place(getString(R.string.hotel02), getString(R.string.stars4), 24.4726119, 39.607875));
+        placesHotels.add(new Place(getString(R.string.hotel03), getString(R.string.stars3), 24.4726119, 39.607875));
+        placesHotels.add(new Place(getString(R.string.hotel04), getString(R.string.stars2), 24.4726119, 39.607875));
+        placesHotels.add(new Place(getString(R.string.hotel05), getString(R.string.stars4), 24.4726119, 39.607875));
+        placesHotels.add(new Place(getString(R.string.hotel06), getString(R.string.stars3), 24.4726119, 39.607875));
+        placesHotels.add(new Place(getString(R.string.hotel07), getString(R.string.stars5), 24.4726119, 39.607875));
+        placesHotels.add(new Place(getString(R.string.hotel08), getString(R.string.stars5), 24.4749532, 39.6177886));
 
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesHotels);

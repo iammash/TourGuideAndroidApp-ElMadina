@@ -29,11 +29,11 @@ public class SpotFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragments_container, container, false);
 
         final ArrayList<Place> placesSpots = new ArrayList<>();
-        placesSpots.add(new Place("Al Masjid an Nabawi", "Religious", 24.4878472, 39.6481492, R.drawable.nabawi));
-        placesSpots.add(new Place("Al Madina Museum in Al Hejaz Railway Station", "Landscape", 24.4619578, 39.5966926, R.drawable.museum));
-        placesSpots.add(new Place("Masjid Quba", "Religious", 24.439252, 39.6150999, R.drawable.quba));
-        placesSpots.add(new Place("Jabal Auhud", "Landscape", 24.5214825, 39.5884737, R.drawable.auhud));
-        placesSpots.add(new Place("Old Ottoman Garrison", "Landscape", 24.4509616, 39.6102161, R.drawable.ottoman));
+        placesSpots.add(new Place(getString(R.string.spot01), getString(R.string.place_type_01), 24.4878472, 39.6481492, R.drawable.nabawi));
+        placesSpots.add(new Place(getString(R.string.spot02), getString(R.string.place_type_02), 24.4619578, 39.5966926, R.drawable.museum));
+        placesSpots.add(new Place(getString(R.string.spot03), getString(R.string.place_type_01), 24.439252, 39.6150999, R.drawable.quba));
+        placesSpots.add(new Place(getString(R.string.spot04), getString(R.string.place_type_02), 24.5214825, 39.5884737, R.drawable.auhud));
+        placesSpots.add(new Place(getString(R.string.spot05), getString(R.string.place_type_02), 24.4509616, 39.6102161, R.drawable.ottoman));
 
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesSpots);

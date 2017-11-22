@@ -29,16 +29,16 @@ public class FoodFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragments_container, container, false);
 
         final ArrayList<Place> placesFood = new ArrayList<>();
-        placesFood.add(new Place("Albaik Restaurant", "7AM - 10PM", 24.4878472, 39.6481492));
-        placesFood.add(new Place("Albaik", "7AM - 10PM", 24.4695945, 39.606515));
-        placesFood.add(new Place("Herfy", "7AM - 9PM", 24.4878472, 39.6481492));
-        placesFood.add(new Place("KFC", "7AM - 11PM", 24.4878472, 39.6481492));
-        placesFood.add(new Place("STARBUCKS COFFEE", "7AM - 10PM", 24.4878472, 39.6481492));
-        placesFood.add(new Place("McDonald's", "7AM - 10PM", 24.4878472, 39.6481492));
-        placesFood.add(new Place("Cinnabon", "7AM - 10PM", 24.4878472, 39.6481492));
-        placesFood.add(new Place("Karachi Restaurant", "7AM - 10PM", 24.4780252, 39.6051526));
-        placesFood.add(new Place("Mairaj Indian and Chinese", "7AM - 10PM", 24.4780252, 39.6051526));
-        placesFood.add(new Place("Hadramout Restaurant", "7AM - 10PM", 24.4675248, 39.5999492));
+        placesFood.add(new Place(getString(R.string.food01), getString(R.string.food_time), 24.4878472, 39.6481492));
+        placesFood.add(new Place(getString(R.string.food02), getString(R.string.food_time), 24.4695945, 39.606515));
+        placesFood.add(new Place(getString(R.string.food03), getString(R.string.food_time), 24.4878472, 39.6481492));
+        placesFood.add(new Place(getString(R.string.food04), getString(R.string.food_time), 24.4878472, 39.6481492));
+        placesFood.add(new Place(getString(R.string.food05), getString(R.string.food_time), 24.4878472, 39.6481492));
+        placesFood.add(new Place(getString(R.string.food06), getString(R.string.food_time), 24.4878472, 39.6481492));
+        placesFood.add(new Place(getString(R.string.food07), getString(R.string.food_time), 24.4878472, 39.6481492));
+        placesFood.add(new Place(getString(R.string.food08), getString(R.string.food_time), 24.4780252, 39.6051526));
+        placesFood.add(new Place(getString(R.string.food09), getString(R.string.food_time), 24.4780252, 39.6051526));
+        placesFood.add(new Place(getString(R.string.food10), getString(R.string.food_time), 24.4675248, 39.5999492));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesFood);
 

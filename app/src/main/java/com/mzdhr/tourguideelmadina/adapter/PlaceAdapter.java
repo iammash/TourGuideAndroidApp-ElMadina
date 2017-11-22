@@ -61,7 +61,7 @@ public class PlaceAdapter extends ArrayAdapter<Place>{
         listItemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri gmmIntentUri = Uri.parse("geo:"+currentPlace.getLatitude()+","+currentPlace.getLongitude()+"39.648536?q="+currentPlace.getPlaceName());
+                Uri gmmIntentUri = Uri.parse("geo:"+currentPlace.getLatitude()+","+currentPlace.getLongitude()+"?q="+currentPlace.getPlaceName());
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 if (mapIntent.resolveActivity(getContext().getPackageManager()) != null) {
