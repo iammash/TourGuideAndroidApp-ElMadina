@@ -42,4 +42,8 @@
     <string name="place_type_02">Landscape</string>
     <string name="welcome_screen_text">A Tour Guide To The City Madina El Monawara!</string>
     <string name="button_text_enter">Enter</string>
+    <string name="tab_title_01">Hotel</string>
+    <string name="tab_title_02">Food</string>
+    <string name="tab_title_03">Shop</string>
+    <string name="tab_title_04">Spot</string>
 </resources>

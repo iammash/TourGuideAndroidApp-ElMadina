@@ -56,10 +56,10 @@ public class PlacesActivity extends AppCompatActivity {
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_shopping);
         tabLayout.getTabAt(3).setIcon(R.drawable.ic_tourism);
 
-        tabLayout.getTabAt(0).setText("Hotel");
-        tabLayout.getTabAt(1).setText("Food");
-        tabLayout.getTabAt(2).setText("Shop");
-        tabLayout.getTabAt(3).setText("Spot");
+        tabLayout.getTabAt(0).setText(R.string.tab_title_01);
+        tabLayout.getTabAt(1).setText(R.string.tab_title_02);
+        tabLayout.getTabAt(2).setText(R.string.tab_title_03);
+        tabLayout.getTabAt(3).setText(R.string.tab_title_04);
 
         // Changing the color of tabs while user moving between them
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
