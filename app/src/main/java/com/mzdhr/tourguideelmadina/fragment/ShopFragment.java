@@ -26,7 +26,7 @@ public class ShopFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_container, container, false);
+        View rootView = inflater.inflate(R.layout.fragments_container, container, false);
 
         final ArrayList<Place> placesShops = new ArrayList<>();
         placesShops.add(new Place("Al Jazeera Hotel & Shopping Mall", "8AM - 10PM", 24.4512006, 39.6076065));

@@ -26,7 +26,7 @@ public class FoodFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_container, container, false);
+        View rootView = inflater.inflate(R.layout.fragments_container, container, false);
 
         final ArrayList<Place> placesFood = new ArrayList<>();
         placesFood.add(new Place("Albaik Restaurant", "7AM - 10PM", 24.4878472, 39.6481492));

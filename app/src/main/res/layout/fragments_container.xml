@@ -1,8 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context="com.mzdhr.tourguideelmadina.ui.Main2Activity$PlaceholderFragment">
+                android:layout_height="match_parent">
 
     <ListView xmlns:android="http://schemas.android.com/apk/res/android"
               android:id="@+id/list"
@@ -11,10 +10,8 @@
               android:layout_height="match_parent"
               android:drawSelectorOnTop="true"
               android:scrollbarStyle="insideInset"
-
               android:dividerHeight="1dp"
               android:divider="#F1F1F1"
-
         />
 
 </RelativeLayout>

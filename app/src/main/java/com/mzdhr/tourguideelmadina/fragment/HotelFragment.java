@@ -26,7 +26,7 @@ public class HotelFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_container, container, false);
+        View rootView = inflater.inflate(R.layout.fragments_container, container, false);
 
         final ArrayList<Place> placesHotels = new ArrayList<>();
         placesHotels.add(new Place("InterContinental Dar Al Hijra Madinah", "★★★★★", 24.4726119, 39.607875));

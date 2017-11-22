@@ -26,7 +26,7 @@ public class SpotFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_container, container, false);
+        View rootView = inflater.inflate(R.layout.fragments_container, container, false);
 
         final ArrayList<Place> placesSpots = new ArrayList<>();
         placesSpots.add(new Place("Al Masjid an Nabawi", "Religious", 24.4878472, 39.6481492, R.drawable.nabawi));
